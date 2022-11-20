@@ -21,34 +21,31 @@
   </head>
   <body>
     <div class="container">
-      <div class="table-responsive">
-        <table class="table table-sm">
-          <thead >
-            <tr>
-              <th>First</th>
-              <th>Last</th>
-              <th>Age</th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider">
-            <tr>
-              <td>Paul</td>
-              <td>Thomas</td>
-              <td>42</td>
-            </tr>
-            <tr>
-              <td>Caitlin</td>
-              <td>Thomas</td>
-              <td>21</td>
-            </tr>
-            <tr>
-              <td>Rory</td>
-              <td>Thomas</td>
-              <td>19</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" />
+        <label for="color">Color</label>
+        <input
+          type="color"
+          id="color"
+          class="form-control form-control-color"
+        />
+        <label for="range">Range</label>
+        <input type="range" id="range" class="form-range" />
+        <label for="sel">Select</label>
+        <select name="sel" id="sel" class="form-select form-select-lg">
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+        </select>
+        <form>
+          <div class="form-check">
+            <label for="check" class="form-check-label">Check</label>
+            <input type="checkbox" class="form-check-input" />
+          </div>
+          <button>Submit</button>
+        </form>
+      </form>
     </div>
     <script src="app.js"></script>
   </body>
