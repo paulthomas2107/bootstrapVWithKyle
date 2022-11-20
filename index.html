@@ -23,37 +23,24 @@
     <div class="container">
       <button
         class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#modal"
+        data-bs-toggle="collapse"
+        data-bs-target=".row"
+        aria-expanded="false"
+        aria-controls="row"
       >
-        Open
+        Toggle
       </button>
-      <div class="modal fade modal-sm" id="modal">
-        <div class="modal-dialog modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1>Header</h1>
-              <button
-                class="btn-close"
-                data-bs-dismiss="modal"
-                data-bs-target="#modal"
-              ></button>
-            </div>
-            <div class="modal-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              amet tenetur totam dolorem recusandae modi quibusdam, nam quaerat
-              unde molestias placeat nobis nemo eos beatae, excepturi sapiente
-              qui. Commodi cumque nihil vero ullam, nulla corporis officiis.
-              Labore vero provident repellat maxime sunt inventore dolores unde
-              aspernatur eum harum illum voluptate dolore quibusdam quasi
-            </div>
-            <div class="modal-footer">
-              <button
-                class="btn btn-primary"
-                data-bs-dismiss="modal"
-                data-bs-target="#modal"
-              >Close</button>
-            </div>
+      <div class="row collapse" id="row">
+        <div class="col">
+          <div class="box">
+            <p>Test 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="col">
+          <div class="box">
+            <p>Test 2</p>
           </div>
         </div>
       </div>
